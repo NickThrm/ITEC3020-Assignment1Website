@@ -1,106 +1,149 @@
 <!DOCTYPE html>
+
 <html lang = "en">
 	<head>
 	
 		<title> Inline City Shop </title>
-		<meta charset = "utf-8" >
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset = "utf-8" name="viewport" content="width=device-width, initial-scale=1" name="author" content = "Nicholas Threumer">
 		
 		<!-- Bootstrap framework for CSS -->
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        
+        <!-- My own attached CSS file -->
+        <link rel="stylesheet" href="css/style.css">
+        
+        
+        <style>
+            .nav-item {
+                font-size: 100%;
+                padding-right: 20px;
+            }
+            #product-description {
+                padding-top: 2%;
+                padding-bottom: 3%;
+            }
+            #product-img {
+                float: left;
+                padding-top: 1%;
+                
+            }
+            #recommended-header {
+                text-align: center;
+                padding-bottom: 3%;
+            }
+            
+        </style>
+        
 
 	</head>
 	
 	<body>
-	
+        
+        
+        <header>
+            <img id="brand-img" src="assets/Logo-img.png" width="125" height="125" s>
+            <p id="company-name">Inline City Shop </p>
+        </header>
+        
+        
+        
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><img src="assets/Logo-img.jpg" id="logo" width="125" height="125"></a>
+            
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#" >Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="#">View Cart</a>
                     </li>
                 </ul>
                 <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="padding-right: 50px">
                     <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
             </div>
         </div>
         </nav>
-		
-        
-        
-        <img src="assets/main-product-fr1.png" id="product" width="400" height="400">
         
         
         
-        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+        <div class="container-fluid" id="main-feature">
             
-            <input type="radio" class="btn-check" name="btncolor" id="btncolor1" autocomplete="off" checked>
-            <label class="btn btn-outline-primary" for="btncolor1">White</label>
+            <img src="assets/main-product-fr1.png" id="product-img" width="600" height="600">
+            
+            <div class="row">
+                <h1 id="product-name" style="text-align: center">
+                    FR Skates FR1 
+                </h1>
+            </div>
+            <div class="row">
+                <p id="product-description" style="text-align: center">
+                    The FR1 80 is the legendary freeride skate which will bring you everywhere with comfort and precision. With perfect comfort, these skates have been re-thought to offer you the best stability and solidity possible. Perfect to improve your skating or to perform your best freeride moves, the FR1 have all the required specs of a high quality skate.
+                </p>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h2 id="feature-heading">
+                        Product Features:
+                    </h2>
+                    <ul id="feature-list" style="float: left">
+                        <li>FRAMES: 4D 243mm Black Frames</li>
+                        <li>WHEELS: Street Invaders II, 80mm/84A</li>
+                        <li>BEARINGS: FR Twincam MW9 Titalium Freeride</li>
+                        <li>LINERS: Removable, changeable</li>
+                        <li>INSOLE: Premium insoles</li>
+                        <li>USES: Freeride, city skating, freestyle</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <div class="row">
+                    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                        <label class="btn btn-outline-primary" for="btnradio1">White</label>
 
-            <input type="radio" class="btn-check" name="btncolor" id="btncolor2" autocomplete="off">
-            <label class="btn btn-outline-primary" for="btncolor2">Black</label>
-
-            <input type="radio" class="btn-check" name="btncolor" id="btncolor3" autocomplete="off">
-            <label class="btn btn-outline-primary" for="btncolor3">Red</label>
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btnradio2">Black</label>
+                
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btnradio3">Red</label>
+                        
+                        <button type="button" class="btn btn-primary" >Add to Cart</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            
+            
+        
+        <div class="container-fluid" id="recommendations" style="padding-top: 5%">
+            <div class="row">
+                <h3 id="recommended-header">
+                Other products you might like...
+                </h3>
+            </div>
+            <div class="row" style="text-align: center">
+                <div class="col">
+                    <img src="assets/fr3-skate.png" id="recommended-img1" width="250" height="250">
+                    <p>FR Skates FR3</p>
+                </div>
+                <div class="col">
+                    <img src="assets/frx-skate.png" id="recommended-img2" width="250" height="250">
+                    <p>FR Skates FRX</p>
+                </div>
+                <div class="col">
+                    <img src="assets/igor-skate.png" id="recommended-img3" width="250" height="250">
+                    <p>FR Skates Igor</p>
+                </div>
+            </div>
         </div>
         
-        <button type="button" class="btn btn-primary btn-lg">Large button</button>
         
         
-        <h1 class="product-name">
-        FR Skates FR1 
-        </h1>
-         
-        <p class="product-description">
-        Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description 
-        </p>
-
-        
-        <ul class="feature-list">
-            <li>product feature</li>
-            <li>product feature</li>
-            <li>product feature</li>
-            <li>product feature</li>
-            <li>product feature</li>
-        </ul>
-        
-        
-        <h2 class="product-recommendations">
-        Other products you might like...
-        </h2>
-        
-        
-        <div class="reccomendations">
-            <img src="assets/fr3-skate.png" id="recommended1" width="200" height="200">
-            <p>FR Skates FR3</p>
-            
-            <img src="assets/frx-skate.png" id="recommended2" width="200" height="200">
-            <p>FR Skates FRX</p>
-            
-            <img src="assets/igor-skate.png" id="recommended3" width="200" height="200">
-            <p>FR Skates Igor</p>
-        </div>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-		
 	</body>
 </html>
